@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.toggle-wrapper{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.toggle{
+    width: 80px;
+    height: 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+}
+
+.sun{
+    background-color: #0984e3;
+}
+
+
+.sun .icon{
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    width: 25px;
+    transition: all 0.4s ease-in-out;
+}
+.sun .icon img{
+    width: 25px;
+    transition: all 0.4s ease-in-out;
+}
+
+.moon{
+    background-color:  #032b43;
+}
+
+.moon .icon{
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    width: 25px;
+    transition: all 0.4s ease-in-out;
+}
+.moon .icon img{
+    width: 25px;
+    transition: all 0.4s ease-in-out;
+}
+.tog-btn{
+    background-color: #FFFFFF;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+}
+
+.sun .tog-btn{
+    transform: translate(18%,-50%);
+    transition: all 0.4s ease-in-out;
+}
+.moon .tog-btn{
+    transform: translate(145%,-50%);
+    transition: all 0.4s ease-in-out;
+}
